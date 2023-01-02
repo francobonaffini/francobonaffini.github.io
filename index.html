@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="icon" href="piramide.png">
     <title>Franco Bonaffini</title>
 
@@ -47,7 +48,7 @@
     <nav class="nav3">
         <div class="cajanav">
             <a class="elemento2" href="#contabilidad">CONTABILIDAD</a>
-            <a class="elemento2" href="#programacion">PROGRAMACIÓN</a>
+            <a class="elemento2" href="#programacion">PROGRAMACION</a>
             <a class="elemento2" href="#hobbies">HOBBIES</a>
             <a class="elemento2" href="#footer">CONTACTO</a>
         </div>
@@ -64,12 +65,15 @@
         <div class="segundaseccion">
             <div class="primeracaja">
                 <div class="presentacion">
-                    <h1> Franco Bonaffini </h1>
+                    <div class="fondo">
+                        <h1 class="titulo"> <span class="typeds"></span> </h1>
+                    </div>
+                    
                     <p class="parrafo1">Profesional dedicado a la contabilidad con un perfil proactivo, creativo, autodidacta y orientado a la calidad. Amante de la tecnología y aficionado al desarrollo de software, la composición musical y las series de ciencia ficción.</p>
                     <p class="parrafo2">Estos últimos años me he dedicado al estudio de la programacion ya que considero es una herramienta y una habilidad necesaria para el futuro de cualquier profesión.</p>
                     <p class="parrafo2">A continuacion dejo el link para descargar mi curriculum personal: </p>
 
-                    <a href="Franco Bonaffini CV.pdf" download="Franco Bonaffini CV" class="descargas">
+                    <a href="Franco Bonaffini CV.docx" download="Descargar Curriculum" class="descargas">
                         <i class="fa-solid fa-download fa-lg"></i>
                         <h3 class="descarga">DESCARGAR CURRÍCULUM</h3>
                     </a>
@@ -79,7 +83,7 @@
 
         <div class="terceraseccion">
             <div class="caja1" id="contabilidad">
-                <div class="texto1">
+                <div class="texto1  animacion1" >
                     <h1 class="conocimientos" >Contabilidad</h1>
                     <p>Estudié del año 2012 al 2015 en la Universidad Nacional de Cuyo, luego de 2015 a 2022 finalicé mis estudios en la Universidad de Congreso en la cual me recibí de Contador Publico Nacional</p>
                     <p><b>Conocimientos: Área impositiva, Área Previsional, Área Financiera</b></p>
@@ -90,23 +94,23 @@
                     <p><b>-Mineria Cripto: </b> Conocimiento de Hardware y Software para desarrollo de Rig de Mineria (Ethereum, Ethereum Classic, Ravencoin,etc.) </p>
 
                 </div>
-                <div class="imagenderecha">
+                <div class="imagenderecha  animacion2">
                     <img src="contabilidad5.jpg" alt="" class="imagenderecha1">
                 </div>
                 
             </div>
 
-            <div class="caja2" id="programacion">
-                <div class="imagenizquierda" id="">
+            <div class="caja2 " id="programacion">
+                <div class="imagenizquierda animacion3" id="">
                     <img src="programming.jpg" alt="" class="imagenizquierda1">
                 </div>
-                <div class="texto2">
-                    <h1 class="estudios">Programacion</h1>
+                <div class="texto2 animacion4">
+                    <h1 class="estudios">Programación</h1>
 
                     
-                    <p>En los ultimos años he dedicado mi tiempo al estudio de la programacion, comenzando por lenguajes de Frontend (HTML, CSS, JAVASCRIPT), lenguajes de Backend (Python) como a su vez creacion de base de datos con SQLITE</p>
+                    <p>En los ultimos años he dedicado mi tiempo al estudio de la programación, comenzando por lenguajes de Frontend (HTML, CSS, JAVASCRIPT), lenguajes de Backend (Python), creacion de base de datos con SQLITE y  NODE JS, con su framework Express para crear aplicaciones de servidor (Backend) que corran en el navegador (cliente).</p>
                     <p>Como profesional del futuro, hay que pensar en adaptarse al cambio tecnológico, ya que de esta manera evitamos la obsolecencia y facilitamos nuestras tareas mediante la automatizacion de procesos</p>
-                    <p>Actualmente me encuentro en el estudio de inteligencia Artificial mediante la creacion de redes neuronales</p>
+                    <p>Actualmente me encuentro en el estudio de Linux y redes informáticas (Protocolos de internet, modelo OSI, TCP/IP, telecomunicaciones, etc.)</p>
  
                     
                         <div class="lenguajes">
@@ -120,9 +124,9 @@
                 
             </div>
 
-            <div class="caja3" id="hobbies">
-                <div class="texto1">
-                    <h1 class="conocimientos">Hobbies</h1>
+            <div class="caja3 " id="hobbies">
+                <div class="texto1 animacion5" id="textoHobbies">
+                    <h1 class="conocimientos" >Hobbies</h1>
                     <p>A lo largo de mi vida, desde pequeño siempre me llamó la atencion el mundo del arte, y mas especificamente de la Música. Este interés se inculcó al escuchar las primeras notas de los discos de Pink Floyd, Led Zeppelin, The Cure, Génesis, The Beatles.</p><br>
                     
                     <p>Esto me llevó a los 9 años a aprender a tocar la guitarra, el cual mi profesor Emir Mazza pudo reafirmar mi pasión por el instrumento</p>
@@ -130,15 +134,10 @@
                     <p>A lo largo de los años pude lograr formar parte de distintas bandas, en las cuales se incluyó, Difusion (2008) - Tributo al rock nacional / Sudamerican-Twitter (2010) - Musica Propia / Dynamo (2012) - Tributo a Soda Stereo / Ecos (2017) - Tributo a Pink Floyd</p>
                     <p> </p>
                     <p>Actualmente me encuentro produciendo mi musica en los momentos libres, y colaborando con proyectos como musico sesionista</p>
-                    <p> </p>
-                    <div class="galeria">
-                        <img src="Ecos Maldito Perro 8.JPG" alt="">
-                        <img src="franco2.jpg" alt="">
-                        <img src="Ecos Maldito Perro 41.JPG" alt="">
-                        <img src="Ecos Maldito Perro 37.JPG" alt="">
-                    </div>
+                    
+                    
                 </div>
-                <div class="imagenderecha">
+                <div class="imagenderecha animacion6">
                     <img src="Ecos Maldito Perro 35.JPG" alt="" class="imagenderecha1">
                 </div>
                 
@@ -153,11 +152,11 @@
     <footer id="footer">
         <div class="cajaunica">
             <div class="mail">
-                <h3>E-Mail</h3>
+                <h3><i class="fa-regular fa-envelope"></i>&nbsp E-Mail</h3>
                 <p>cdr.francobonaffini@gmail.com</p>
             </div>
             <div class="whatsapp">
-                <h3>Whatsapp</h3>
+                <h3><i class="fa-brands fa-whatsapp"></i>&nbsp Whatsapp</h3>
                 <p>261-4169653</p>
             </div>
             <div class="redes">
@@ -188,7 +187,7 @@
 
 
 
-
-<script src="codigo.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="codigo.js"> </script>
 </body>
 </html>

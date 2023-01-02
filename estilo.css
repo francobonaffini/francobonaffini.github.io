@@ -56,7 +56,7 @@ body{
 
 .elemento1{
     
-    color: rgb(165, 165, 165);
+    color: rgb(204, 204, 204);
     padding: 5px;
     background-color: transparent;
     letter-spacing: 2px;
@@ -97,25 +97,35 @@ body{
     width: 300px;
     justify-content: center;
     align-content: center;
-    
+    animation: aparecer 2s;
+    animation-timing-function: ease-in;
     
 }
 
 .imagen1_1{
     margin-top: -25px;
     border-radius: 50%;
-    height: 240px;
-    width: 240px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
     filter:drop-shadow(5px 5px 5px);
     
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
 /***************/
 
 .segundaseccion{
-    height: 300px;
+    height: 400px;
 }
 
 .primeracaja{
@@ -136,20 +146,23 @@ body{
     
 }
 
+
 .presentacion h1{
-    color: rgb(226, 224, 224);
-    
-    font-size: 50px;
+    color: rgba(238, 205, 168, 0.74);
+    text-shadow: 1px 1px rgba(128, 104, 77, 0.74);
+    font-size: 40px;
     margin: 5px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 20px;
     letter-spacing: 4px;
 }
 
 .presentacion p{
     text-align: center;
     justify-self: center;
-    color: rgb(224, 224, 224);
+    color: rgb(194, 193, 193);
     margin: 5px;
+    font-size: 20px;
     letter-spacing: 0.5px;
     margin-top: 20px;
     
@@ -165,8 +178,10 @@ body{
     color: rgb(3, 150, 235);
 }
 
+
 .descargas{
     display: flex;
+    padding-top: 30px;
 }
 
 .descargas i{
@@ -185,9 +200,9 @@ body{
 
 
 .terceraseccion{
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(32, 32, 32, 0.568);
     display: flex;
-    color: white;
+    color: rgb(255, 255, 255);
     flex-direction: column;
 
 }
@@ -214,17 +229,71 @@ body{
 
 }
 
+
+
+.animacion1{
+    opacity: 0;
+    transition: all 2s;
+}
+.animacion2{
+    opacity: 0;
+    transition: all 2s;
+}
+.animacion3{
+    opacity: 0;
+    transition: all 2s;
+}
+.animacion4{
+    opacity: 0;
+    transition: all 2s;
+}
+.animacion5{
+    opacity: 0;
+    transition: all 2s;
+}
+.animacion6{
+    opacity: 0;
+    transition: all 2s;
+}
+
+.mostrarIzquierda {
+    animation: mostrarArriba1 2s;
+}
+.mostrarDerecha {
+    animation: mostrarArriba2 2s;
+}
+
+@keyframes mostrarArriba1 {
+    from {
+        transform : translateX(-70px)
+    }
+    to {
+        transform : translateX(0)
+    }
+}
+
+@keyframes mostrarArriba2 {
+    from {
+        transform : translateX(70px)
+    }
+    to {
+        transform : translateX(0px)
+    }
+}
+
+
+
 .texto1 h1{
 
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     color: rgb(255, 255, 255);
-    padding-top: 30px;
+    
 }
 
 
 .texto1 p{
     margin:10px 5px;
-    padding: 0px 30px;
+    padding: 0px 100px;
 }
 
 .imagenderecha{
@@ -237,9 +306,21 @@ body{
 
 .imagenderecha1{
     position: relative;
-    bottom: -4px;
+    height: 100%;
     width: 100%;
-    object-fit: cover;
+    overflow: hidden;
+    bottom: -3px;
+
+}
+
+.imagenizquierda{
+    width: 50%;
+    height: 100%;
+}
+
+.imagenizquierda1{
+    width: 100%;
+    height: 110%;
 }
 
 
@@ -248,6 +329,10 @@ body{
     display: flex;
     flex-direction: row;
 
+}
+#textoHobbies{
+    position: relative;
+    bottom: 30px;
 }
 
 .galeria{
@@ -301,7 +386,7 @@ body{
 }
 
 .texto2 h1{
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 
 .texto1 p{
@@ -311,7 +396,8 @@ body{
 .texto2 p{
     text-align: center;
     margin-bottom: 10px;
-    margin-top: 10px;
+   
+    padding: 10px 100px;
 }
 
 .lenguajes{
@@ -331,15 +417,14 @@ body{
     filter: drop-shadow(5px 5px 5px black);
 }
 
-
-
-.imagenizquierda{
-    width: 50%;
+.conocimientos{
+    margin-bottom: 50px;
+}
+.estudios{
+    margin-bottom: 10px;
 }
 
-.imagenizquierda1{
-    width: 100%;
-}
+
 
 
 
@@ -348,7 +433,7 @@ body{
 
 
 footer{
-    height: 200px;
+    height: 250px;
     background-color: rgba(0, 0, 0, 0.89);
     display: flex;
     justify-content: space-around;
@@ -401,6 +486,8 @@ footer{
     margin-bottom: 8px;
 }
 
+
+
 .redes{
     
     width: 100%;
@@ -426,7 +513,7 @@ footer{
 }
 
 .iconos a i{
-   color: rgb(6, 10, 233);
+   color: rgb(136, 190, 111);
    margin-left: 10px;
 }
 
@@ -634,9 +721,9 @@ footer{
         padding: 5px 25px;
     }
 
-    .imagenderecha{
-        width: 100%;
-    }
+    
+
+
 
     .caja2{
         display: flex;
@@ -645,9 +732,8 @@ footer{
         align-items: center;
     }
     
-    .imagenizquierda{
-        width: 100%;
-    }
+
+
     .texto2{
         padding: 0px 20px;
         margin-top: 30px;
@@ -689,35 +775,76 @@ footer{
     }
 
 
-    .footer{
-        padding: 0px;
-        height: 280px;
+    #footer{
+        
+       height: 300px;
+        
     }
 
     .cajaunica{
         margin-top: 20px;
-        width: 100%;
+        width: 80%;
         height: 100%;
         align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        padding: 0px;
+        padding: 10px;
     }
 
     .mail{
         border: none;
+        border-bottom: 1px solid white;
+        margin-top: 15px;
+        padding: 10px;
+
 
     }
 
     .whatsapp{
         border: none;
+        border-bottom: 1px solid white;
+        margin-top: 15px;
+        padding: 10px;
     }
 
     .redes{
         border: none;
+        margin-top: 15px;
+        margin-bottom: 20px;
     }
 
+    .imagenderecha{
+        position: relative;
+        width: 70%;
+        object-fit: cover;
+        bottom: 3px;
+        
+    }
+    
+
+
+    .imagenderecha1{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        bottom: -3px;
+    
+    }
+    
+    .imagenizquierda{
+        width: 70%;
+        height: 100%;
+    }
+    
+    .imagenizquierda1{
+        width: 100%;
+        height: 110%;
+    }
 }
 
 
+p{
+    font-size: 17px;
+}
